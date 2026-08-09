@@ -1,0 +1,37 @@
+# ========================
+# 1. Python & Backend
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+ai_backend/.venv/
+venv/
+ENV/
+
+# ========================
+# 2. Node, Bun, & TypeScript
+# ========================
+node_modules/
+derag-workflow/node_modules/
+derag-workflow/workflow/node_modules/
+.cre_build_tmp.js
+npm-debug.log
+yarn-error.log
+
+# ========================
+# 3. Secrets & API Keys (CRITICAL)
+# ========================
+.env
+derag-workflow/.env
+secrets.yaml
+derag-workflow/secrets.yaml
+*.pem
+*.key
+
+# ========================
+# 4. OS & IDE Files
+# ========================
+.DS_Store
+.vscode/
+.idea/

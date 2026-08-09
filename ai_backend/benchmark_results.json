@@ -1,0 +1,193 @@
+{
+    "summary": {
+        "Accumulated Requests": 30,
+        "Successful Data Points": 30,
+        "Success Rate (%)": 100.0,
+        "Error Rate (%)": 0.0,
+        "Mean Latency (seconds)": 6.882,
+        "P95 Latency (seconds)": 9.438,
+        "Average Payload Size (bytes)": 369.43
+    },
+    "raw_results": [
+        {
+            "id": 0,
+            "status": "success",
+            "latency": 8.979326009750366,
+            "size": 405
+        },
+        {
+            "id": 1,
+            "status": "success",
+            "latency": 5.487550497055054,
+            "size": 368
+        },
+        {
+            "id": 2,
+            "status": "success",
+            "latency": 9.07099986076355,
+            "size": 375
+        },
+        {
+            "id": 3,
+            "status": "success",
+            "latency": 7.403393507003784,
+            "size": 362
+        },
+        {
+            "id": 4,
+            "status": "success",
+            "latency": 6.974999904632568,
+            "size": 342
+        },
+        {
+            "id": 5,
+            "status": "success",
+            "latency": 8.108216524124146,
+            "size": 352
+        },
+        {
+            "id": 6,
+            "status": "success",
+            "latency": 2.9186697006225586,
+            "size": 339
+        },
+        {
+            "id": 7,
+            "status": "success",
+            "latency": 6.713693380355835,
+            "size": 388
+        },
+        {
+            "id": 8,
+            "status": "success",
+            "latency": 6.468813419342041,
+            "size": 351
+        },
+        {
+            "id": 10,
+            "status": "success",
+            "latency": 3.913020133972168,
+            "size": 393
+        },
+        {
+            "id": 11,
+            "status": "success",
+            "latency": 7.211422681808472,
+            "size": 350
+        },
+        {
+            "id": 12,
+            "status": "success",
+            "latency": 5.988982915878296,
+            "size": 375
+        },
+        {
+            "id": 13,
+            "status": "success",
+            "latency": 8.276139497756958,
+            "size": 364
+        },
+        {
+            "id": 14,
+            "status": "success",
+            "latency": 8.496038913726807,
+            "size": 405
+        },
+        {
+            "id": 15,
+            "status": "success",
+            "latency": 4.645997047424316,
+            "size": 371
+        },
+        {
+            "id": 16,
+            "status": "success",
+            "latency": 8.786700010299683,
+            "size": 402
+        },
+        {
+            "id": 17,
+            "status": "success",
+            "latency": 5.584789514541626,
+            "size": 362
+        },
+        {
+            "id": 18,
+            "status": "success",
+            "latency": 8.602324485778809,
+            "size": 383
+        },
+        {
+            "id": 19,
+            "status": "success",
+            "latency": 5.867307424545288,
+            "size": 374
+        },
+        {
+            "id": 20,
+            "status": "success",
+            "latency": 5.940736770629883,
+            "size": 370
+        },
+        {
+            "id": 21,
+            "status": "success",
+            "latency": 4.864504337310791,
+            "size": 366
+        },
+        {
+            "id": 22,
+            "status": "success",
+            "latency": 6.490463972091675,
+            "size": 366
+        },
+        {
+            "id": 23,
+            "status": "success",
+            "latency": 4.879963636398315,
+            "size": 366
+        },
+        {
+            "id": 24,
+            "status": "success",
+            "latency": 7.7971014976501465,
+            "size": 374
+        },
+        {
+            "id": 25,
+            "status": "success",
+            "latency": 9.327627897262573,
+            "size": 385
+        },
+        {
+            "id": 26,
+            "status": "success",
+            "latency": 8.022172689437866,
+            "size": 352
+        },
+        {
+            "id": 27,
+            "status": "success",
+            "latency": 9.572204828262329,
+            "size": 361
+        },
+        {
+            "id": 28,
+            "status": "success",
+            "latency": 6.841836929321289,
+            "size": 356
+        },
+        {
+            "id": 29,
+            "status": "success",
+            "latency": 6.496521234512329,
+            "size": 383
+        },
+        {
+            "id": 30,
+            "status": "success",
+            "latency": 6.721506834030151,
+            "size": 343
+        }
+    ]
+}
