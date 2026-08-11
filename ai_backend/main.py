@@ -14,10 +14,8 @@ class QueryModel(BaseModel):
 # ==========================================
 # Configuration & Environment Variables
 # ==========================================
-# SECURITY: Never hardcode API keys. Load them from the .env file.
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# Allow the Greenfield URL to be overridden by the environment, but provide a safe placeholder
 GREENFIELD_URL = os.getenv(
     "GREENFIELD_URL", 
     "https://gnfd-testnet-sp3.bnbchain.org/view/derag-ai-storage-1/q3_enterprise_risk.json"
@@ -37,14 +35,12 @@ async def fetch_greenfield_context() -> str:
     Retrieves raw enterprise data asynchronously from BNB Greenfield decentralized storage.
     """
     try:
-        # 10-second timeout to prevent oracle hanging on storage retrieval
         async with httpx.AsyncClient(timeout=10.0) as client:
             response = await client.get(GREENFIELD_URL)
             response.raise_for_status()
             return response.text
     except Exception as e:
         print(f"⚠️ Error reading Greenfield: {e}")
-        # Return empty JSON string as fallback context
         return "{}"
 
 async def run_gemini_rag(query: str, context: str) -> str:
@@ -65,10 +61,8 @@ async def run_gemini_rag(query: str, context: str) -> str:
         f"USER QUERY: {query}"
     )
 
-    # Note: Ensure the model version here matches what you tested (Gemini 1.5/3.6 Flash)
     GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={GEMINI_API_KEY}"
     
-    # Adding temperature=0.0 to match the whitepaper's architectural claims
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
